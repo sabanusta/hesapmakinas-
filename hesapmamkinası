@@ -1,0 +1,56 @@
+package Ders01;
+
+
+import java.util.Scanner;
+
+public class hesapMakinasi {
+    static int mod(int a, int b){
+        int result= a%b;
+        System.out.println(result);
+        return result;
+
+
+
+    }
+
+
+     static int cevre(int a,int b){
+         int result= 2*(a+b);
+         System.out.println(result);
+        return result;
+
+     }
+
+     public static void main(String[] args) {
+
+         Scanner scan1 = new Scanner(System.in);
+         System.out.println("Birinci sayıyı giriniz ");
+         int a = scan1.nextInt();
+         Scanner scan2 = new Scanner(System.in);
+         System.out.println("İkinici sayıyı giriniz ");
+         int b = scan2.nextInt();
+
+
+         Scanner scan = new Scanner(System.in);
+         System.out.println("Yapılacak işlemi giriniz ");
+         int select = scan.nextInt();
+
+         switch (select) {
+
+             case 8:
+                 mod(a, b);
+                 break;
+             case 9:
+                 cevre(a, b);
+
+                 break;
+             default:
+                 System.out.println("güle güle");
+         }
+     }
+
+
+
+
+
+    }
